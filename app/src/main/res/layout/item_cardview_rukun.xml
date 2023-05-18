@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_item_photo"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:src="@tools:sample/avatars"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/rukun_shalat"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/iv_item_photo"/>
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTittle"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/iv_item_photo"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="@string/detail"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/iv_item_photo">
+
+            <Button
+                android:id="@+id/btnBaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baca_selengkapnya"/>
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
